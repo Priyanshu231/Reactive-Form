@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <h1>Name Editor</h1>
+</mat-toolbar>
+<mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" id="name" [formControl]="name">
+</mat-form-field>
+<br>
+<button mat-raised-button color="primary" type="button" (click)="updateName()">Update Name</button>
+<br><br>
+<h1>Value: {{ name.value }}</h1>
